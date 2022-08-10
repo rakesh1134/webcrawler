@@ -135,7 +135,7 @@ func givenextquotepos(s string, slen int, si int) int {
 
 func startCrawl(startPage string) {
 	crawlIndex := 0
-	crawlLimit := 2 //only crawl first 10 links
+	crawlLimit := 10 //only crawl first 10 links
 	crawled := make(map[string]bool)
 	toCrawl := make([]string, 0, 100)
 
